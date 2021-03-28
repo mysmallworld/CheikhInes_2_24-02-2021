@@ -1,0 +1,444 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+    font-size: 10px;
+    font-family: Raleway;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+/* positionnement de l'en-tête avec grid */
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+}
+.icon {
+    grid-area: item;
+    width: 70%;
+    padding: 20px;
+}
+#sign-in {
+    grid-area: name;
+    color: #0065fc;
+    text-align: right;
+    padding: 40px;
+}
+#house {
+    grid-area: p1;
+    text-align: center;
+    padding: 5px;
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+}
+#move {
+    grid-area: p2;
+    text-align: center;
+    padding: 5px;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px 30px;
+    grid-template-areas:
+        "item name"
+        "p1 p2";
+}
+
+/* positionement de main avec grid */
+
+.title {
+    grid-area: header;
+}
+.form1 {
+    grid-area: form;
+}
+.best {
+    grid-area: article;
+}
+.home {
+    grid-area: section1;
+}
+.activities {
+    grid-area: section2;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px 150px 500px 1300px 1300px;
+    grid-template-areas:
+        "header"
+        "form"
+        "article"
+        "section1"
+        "section2";
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+/* titre et paragraphe */
+h1 {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+main>header>p {
+    display: inline-block;
+}
+
+/* formulaire */
+.search {
+    display: flex;
+}
+.search>label>i {
+    border: transparent;
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+}
+span {
+    display: none;
+}
+button{
+    color: white;
+    background-color: rgb(41, 103, 243);
+    border-radius: 10px 10px 10px 10px;
+    border:transparent;
+    padding: 10px;
+    width: 10%;
+}
+
+#filter {
+    display: flex;
+}
+
+label>input {
+    display: none;
+}
+
+.filter>label>i {
+    border:transparent;
+    border-radius: 20px;
+    background:rgb(224, 235, 253);
+    color: rgb(41, 103, 243);
+    padding: 10px;
+}
+
+#economic {
+    display: inline-block;
+    border:solid;
+    border-width:thin;
+    border-color:rgb(217, 217, 217);
+    border-radius: 20px 20px 20px 20px;
+}
+#family {
+    display: inline-block;
+    border:solid;
+    border-width:thin;
+    border-color:rgb(217, 217, 217);
+    border-radius: 20px 20px 20px 20px;
+}
+#romantic {
+    display: inline-block;
+    border:solid;
+    border-width:thin;
+    border-color:rgb(217, 217, 217);
+    border-radius: 20px 20px 20px 20px;
+}
+#pets {
+    display: inline-block;
+    border:solid;
+    border-width:thin;
+    border-color:rgb(217, 217, 217);
+    border-radius: 20px 20px 20px 20px;
+}
+
+#msg-info {
+    display: inline-block;
+}
+
+/* populaire */
+.best {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px 150px 150px 150px;
+    grid-template-areas:
+        "title-best"
+        "best1"
+        "best2"
+        "best3";
+    grid-gap: 10px;
+    background-color: rgb(242, 242, 242);
+}
+.title-best {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.best1 {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+}
+.best2 {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+}
+.best3 {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+}
+
+.img-best1{
+    max-width: 100%;
+    width: 33%;
+    height: 120px ;
+    object-fit: cover;
+    padding: 4px;
+    border-radius: 20px 0 0 20px;
+}
+.img-best2{
+    max-width: 100%;
+    width: 33%;
+    height: 120px;
+    object-fit: cover;
+    padding:4px;
+    border-radius: 20px 0 0 20px;
+}
+.img-best3{
+    max-width: 100%;
+    width: 33%;
+    height: 120px;
+    object-fit: cover;
+    padding:4px;
+    border-radius: 20px 0 0 20px;
+}
+#legend-best1 ,#legend-best2, #legend-best3{
+    padding:10px;
+}
+
+.stars{
+    padding-top:50px;
+}
+
+/* hébergement */
+.home {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px 200px 200px 200px 200px 200px 200px;
+    grid-template-areas:
+        "title-home"
+        "home1"
+        "home2"
+        "home3"
+        "home4"
+        "home5"
+        "home6";
+    grid-gap: 10px;
+}
+.title-home {
+    display: inline-block;
+}
+.home1{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px; 
+}
+.home2{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px;
+}
+.home3{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px; 
+}
+.home4{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px; 
+}
+.home5{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px; 
+}
+.home6{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px; 
+}
+
+.home1-img {
+    max-width: 100%;
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    padding:4px;
+    border-radius: 20px 20px 0px 0px;
+}
+.home2-img {
+    max-width: 100%;
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    padding:4px;
+    border-radius: 20px 20px 0px 0px;
+}
+.home3-img {
+    max-width: 100%;
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    padding:4px;
+    border-radius: 20px 20px 0px 0px;
+}
+.home4-img {
+    max-width: 100%;
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    padding:4px;
+    border-radius: 20px 20px 0px 0px;
+}
+.home5-img {
+    max-width: 100%;
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    padding:4px;
+    border-radius: 20px 20px 0px 0px;
+}
+.home6-img {
+    max-width: 100%;
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    padding:4px;
+    border-radius: 20px 20px 0px 0px;
+}
+#legend-home1, #legend-home2, #legend-home3, #legend-home4, #legend-home5, #legend-home6 {
+    padding:10px;
+}
+
+/* activités */
+.activities {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 150px 150px 150px 150px 150px 150px;
+    grid-template-areas:
+        "title-move"
+        "move1"
+        "move2"
+        "move3"
+        "move4"
+        "move5"
+        "move6";
+    grid-gap: 30px;
+}
+.title-move {
+    display: inline-block;
+}
+.move1{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px;
+}
+.move2{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px;
+}
+.move3{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px;
+}
+.move4{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px;
+}
+.move5{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px;
+}
+.move6{
+    box-shadow: 0 5px 10px grey;
+    border-radius: 20px 20px 20px 20px;
+}
+.move1-img {
+    max-width: 100%;
+    width: 100%;
+    height: calc(100% - 30px);
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.move2-img {
+    max-width: 100%;
+    width: 100%;
+    height: calc(100% - 30px);
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.move3-img {
+    max-width: 100%;
+    width: 100%;
+    height: calc(100% - 30px);
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.move4-img {
+    max-width: 100%;
+    width: 100%;
+    height: calc(100% - 30px);
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.move5-img {
+    max-width: 100%;
+    width: 100%;
+    height: calc(100% - 30px);
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.move6-img {
+    max-width: 100%;
+    width: 100%;
+    height: calc(100% - 30px);
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+#legend-move1, #legend-move2, #legend-move3, #legend-move4, #legend-move5, #legend-move6 {
+    padding: 10px;
+}
+
+/* fin */
+footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20px 50px 20px 30px 20px 30px;
+    padding: 10px;
+    grid-gap:10px;
+    background-color: rgb(242, 242, 242);
+}
+
