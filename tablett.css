@@ -1,0 +1,122 @@
+:root {
+    font-size: 13px;
+}
+
+/* nav */
+nav {
+    grid-template-rows: 90px 40px;
+}
+
+#sign-in {
+    line-height: 90px;
+    font-weight: 800;
+    font-size: 16px;
+    padding-right: 30px;
+}
+
+/* barre de recherche*/
+#text-search {
+    display: inline-block;
+}
+.search {
+    width: 50%;
+}
+.filter > p {
+    font-size: 14px;
+}
+
+/* populaire */
+.best {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 130px 110px;
+    grid-template-areas:
+        "title-best title-best"
+        "best1 best1"
+        "best2 best3";
+}
+.best1 {
+    width: 100%;
+    padding: 0 30px 0 30px;
+}
+.best2 {
+    padding-left: 30px;   
+}
+.best3 {
+    padding-right: 30px;
+} 
+
+.img-best1 {
+    width: 50%;
+    object-position: 100% 70%;
+}
+.img-best2 {
+    width: 50%;
+}
+.img-best3 {
+    width: 50%;
+    object-position: 100% 60%;
+}
+
+#legend-best1, #legend-best2, #legend-best3 {
+    width: 50%;
+    text-align: center;
+   
+}
+#legend-best1>h4, #legend-best1>h4>p {
+    padding: 10px;
+}
+.stars {
+    position: relative;
+    padding: 10px;
+}
+
+/* hébergement */
+.home {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(3, 200px);
+    grid-template-areas:
+        "title-home title-home"
+        "home1 home2"
+        "home3 home4"
+        "home5 home6";
+}
+
+/* activités */
+.activities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(3, 170px);
+    grid-template-areas:
+        "title-move title-move"
+        "move1 move2"
+        "move3 move4"
+        "move5 move6";
+}
+
+/* footer */
+footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 90px;
+    grid-template-areas:
+    "title1 title2 title3"
+    "article1 article2 article3 ";
+    align-items: center;
+}
+.title-about {
+    grid-area: title1;
+}
+.title-rules {
+    grid-area: title2;
+}
+.title-help {
+    grid-area: title3;
+}
+.about {
+    grid-area: article1;
+}
+.rules {
+    grid-area: article2;
+}
+.help {
+    grid-area: article3;
+}

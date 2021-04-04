@@ -1,0 +1,165 @@
+:root {
+    font-size: 12px;
+}
+
+/* en-tête */
+nav {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 90px;
+    grid-template-areas: 
+    "item p1 p2 name";
+}
+.icon {
+    padding: 20px;
+}
+#sign-in {
+    line-height: 70px;
+    font-size: 12px;
+    text-align: center;
+}
+#move {
+    border-bottom: none;
+    line-height: 70px;
+}
+#house {
+    border-bottom: none;
+    border-top: 2px solid rgb(41, 103, 243);
+    line-height: 68px;
+}
+
+/* titre */
+h1 {
+    display: block;
+}
+
+/* barre de recherche */
+.search {
+    width: 35%;
+}
+#icon-search {
+    display: none;
+}
+button {
+    border-radius: 0 10px 10px 0;
+}
+#text-search {
+    padding: 0;
+}
+.filter {
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.filter > p {
+    display:inline-block;
+    padding-right: 20px;
+}
+
+/* structure main */
+main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "header header"
+        "form form"
+        "section1 article"
+        "section2 section2";
+    padding: 20px;
+}
+
+/* populaire */
+.best {
+    grid-template-columns: auto;
+    grid-template-rows: auto repeat(3, 150px);
+    grid-template-areas:
+        "title-best"
+        "best1"
+        "best2"
+        "best3";
+    padding: 10px;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.best1, .best2, .best3 {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.img-best1, 
+.img-best2, 
+.img-best3 {
+    width: 40%;
+    height: 100%;
+}
+
+#legend-best1,
+#legend-best2,
+#legend-best3 {
+    width: 60%;
+    text-align: initial;
+    padding: 10px;
+    height: 100%;
+}
+#legend-best1>h4, #legend-best1>h4>p {
+    padding: 0;
+}
+
+.stars {
+    position: absolute;
+    padding: 0;
+}
+
+
+/* hébergement */
+.home { 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(2, 200px);
+    grid-template-areas: 
+    "title-home title-home title-home"
+    "home1 home2 home3"
+    "home4 home5 home6";
+    padding: 10px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px; 
+    gap: 30px;
+}
+
+.home1 figure, 
+.home2 figure, 
+.home3 figure, 
+.home4 figure, 
+.home4 figure, 
+.home5 figure, 
+.home6 figure {
+    height: 100%;
+    width: 200px;
+}
+.home1-img, 
+.home2-img, 
+.home3-img, 
+.home4-img, 
+.home5-img, 
+.home6-img{
+    width: 100%;
+    height: calc(100% - 60px);
+}  
+#legend-home1,
+#legend-home2,
+#legend-home3,
+#legend-home4,
+#legend-home5,
+#legend-home6 {
+    width: 100%;
+    height: 60px;
+}  
+
+/* activités */
+.activities {
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto 150px 150px;
+    grid-template-areas:
+        "title-move title-move title-move title-move"
+        "move1 move2 move4 move5"
+        "move1 move3 move4 move6";
+}
