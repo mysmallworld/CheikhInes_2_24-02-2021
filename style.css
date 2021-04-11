@@ -179,7 +179,7 @@ label > input {
 .filter :hover{
     background:rgb(224, 235, 253); 
     transform: scale(1.1);
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 .filter > label > i {
