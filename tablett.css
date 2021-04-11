@@ -1,5 +1,5 @@
 :root {
-    font-size: 13px;
+    font-size: 11px;
 }
 
 /* nav */
@@ -14,12 +14,16 @@ nav {
     padding-right: 30px;
 }
 
+.title > h1 {
+    display: block;
+}
+
 /* barre de recherche*/
 #text-search {
     display: inline-block;
 }
 .search {
-    width: 50%;
+    width: 65%;
 }
 .filter > p {
     font-size: 14px;
@@ -28,11 +32,12 @@ nav {
 /* populaire */
 .best {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 130px 110px;
+    grid-template-rows: auto 130px 130px;
     grid-template-areas:
         "title-best title-best"
         "best1 best1"
         "best2 best3";
+        padding: 20px 10px;
 }
 .best1 {
     width: 100%;
@@ -46,7 +51,7 @@ nav {
 } 
 
 .img-best1 {
-    width: 50%;
+    width: calc(50% + 8px);
     object-position: 100% 70%;
 }
 .img-best2 {
@@ -60,8 +65,11 @@ nav {
 #legend-best1, #legend-best2, #legend-best3 {
     width: 50%;
     text-align: center;
-   
 }
+#legend-best2, #legend-best3 {
+    font-size: 10px;
+}
+
 #legend-best1>h4, #legend-best1>h4>p {
     padding: 10px;
 }
@@ -71,7 +79,7 @@ nav {
 }
 
 /* hébergement */
-.home {
+#home {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto repeat(3, 200px);
     grid-template-areas:
@@ -82,7 +90,7 @@ nav {
 }
 
 /* activités */
-.activities {
+#activities {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto repeat(3, 170px);
@@ -100,7 +108,7 @@ footer {
     grid-template-areas:
     "title1 title2 title3"
     "article1 article2 article3 ";
-    align-items: center;
+    padding: 20px;
 }
 .title-about {
     grid-area: title1;
