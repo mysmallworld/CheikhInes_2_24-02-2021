@@ -176,9 +176,8 @@ label > input {
     padding: 0 10px;
 }
 
-.filter :hover{
-    background:rgb(224, 235, 253); 
-    transform: scale(1.1);
+.filter > label:hover {
+    background: rgb(224, 235, 253);
     transition: 0.3s;
 }
 
