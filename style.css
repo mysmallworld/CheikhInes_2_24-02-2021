@@ -39,14 +39,15 @@ h4 {
     height: 100%;
     padding: 10px;
 }
-
 #sign-in {
     grid-area: name;
     color: rgb(41, 103, 243);
     text-align: right;
     line-height: 70px;
     font-weight: 800;
-    padding-right: 10px;
+    border:none;
+    padding:0 10px 0 0;
+    background-color: unset;
 }
 
 #house {
@@ -113,11 +114,13 @@ h1 {
     padding-top: 10px;
     font-weight: 800;
 }
+
 main > header > p {
     display: inline-block;
 }
 
 /* form */
+
 /* search */
 .search {
     display: flex;
@@ -142,10 +145,10 @@ main > header > p {
     display: none;
     padding: 0 10px;
 }
-#filters {
+.filters {
     padding: 0 10px;
 }
-button {
+.button-search {
     display: flex;
     color: white;
     background-color: rgb(41, 103, 243);
@@ -192,7 +195,7 @@ label > input {
     color: rgb(41, 103, 243);
 }
 
-/* buttons filters */
+/* button filters */
 #economic,
 #family,
 #romantic,
@@ -220,7 +223,7 @@ label > input {
     margin-right: 5px;
 }
 
-/* best */
+/* best with grid */
 .best {
     display: grid;
     grid-template-columns: auto;
@@ -289,19 +292,19 @@ label > input {
 }
 
 /* stars and prices */
-.stars {
+.stars-best {
     position: absolute;
     bottom: 5px;
     color: rgb(41, 103, 243);
 }
-#empty-stars {
+.empty-stars {
     color: rgb(217, 217, 217);
 }
-#prices {
+.prices {
     font-weight: bold;
 }
 
-/* home */
+/* home with grid */
 #home {
     display: grid;
     grid-template-columns: auto;
@@ -375,10 +378,10 @@ label > input {
     color: black;
     font-size: 12px;
 }
-#stars {
+.stars-home {
     color: rgb(41, 103, 243);
 }
-#stars em {
+.stars-home em {
     color: rgb(217, 217, 217);
 }
 
@@ -388,7 +391,7 @@ label > input {
     padding: 10px;
 }
 
-/* activities */
+/* activities with grid */
 #activities {
     display: grid;
     grid-template-columns: auto;
@@ -483,4 +486,186 @@ footer {
 footer > ul > li > a {
     color: black;
     font-size: 12px;
+}
+
+/* modal register with grid */
+.title-sign-up {
+    grid-area: t-sign;
+}
+form > p {
+    grid-area: contact;
+    text-align: center;
+}
+#name1 {
+    grid-area: lastname;
+}
+#lastname {
+    grid-area: case1;
+}
+#name2 {
+    grid-area: name;
+}
+#firstname {
+    grid-area: case2;
+}
+#mail {
+    grid-area: mail;
+}
+#email {
+    grid-area: case3;
+}
+#pass {
+    grid-area: pass;
+}
+#password {
+    grid-area: case4;
+}
+.button-sign-up {
+    grid-area: button;
+}
+.question {
+    grid-area: question;
+    text-align: center;
+}
+
+.modal-auth {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 20px repeat(6, 30px);
+    grid-template-areas: 
+    ". t-sign ."
+    "contact contact contact"
+    "lastname case1 case1"
+    "name case2 case2"
+    "mail case3 case3"
+    "pass case4 case4"
+    ". button ."
+    "question question question";
+    gap: 20px 10px;
+}
+
+#sign-up {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
+}
+
+#connect {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
+}
+
+.modal-auth {
+    border-radius: 5px;
+    border: 5px solid rgb(224, 235, 253);
+    margin: 50vh auto;
+    transform: translateY(-25vh);
+    height: auto;
+    width: 95%;
+    background: white;
+    padding : 0 10px 0 0;
+}
+.modal-connect {
+    border-radius: 5px;
+    border: 5px solid rgb(224, 235, 253);
+    margin: 50vh auto;
+    transform: translateY(-25vh);
+    height: 45vh;
+    width: 90%;
+    background: white;
+}
+
+#name1,
+#name2,
+#mail,
+#pass {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#lastname, #firstname, #password, #email {
+    border-radius: 10px;
+    border: 2px solid rgb(224, 235, 253);
+    padding: 0 5px;
+    width: 80%;
+}
+#password-connect, #email-connect {
+    border-radius: 10px;
+    border: 2px solid rgb(224, 235, 253);
+    padding: 0 5px;
+}
+
+.title-sign-up, .title-connect {
+    color: rgb(41, 103, 243);
+    text-align: center;
+}
+.button-sign-up {
+    color: white;
+    background-color: rgb(41, 103, 243);
+    border-radius: 10px;
+    border: transparent;
+}
+
+.button-connect {
+    color: white;
+    background-color: rgb(41, 103, 243);
+    border-radius: 10px;
+    border: transparent;
+}
+
+#close-sign, #close-connect, #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(41, 103, 243);
+    background-color: rgb(224, 235, 253);
+    border-radius: 10px;
+    padding: 4px;
+    line-height: 8px;
+    border: transparent;
+    text-decoration: none;
+}
+
+/* modal connect with grid */
+.title-connect {
+    grid-area: t-connect;
+}
+#mail-connect {
+    grid-area: m-connect ;
+}
+#email-connect {
+    grid-area: e-connect ;
+}
+#pass-connect {
+    grid-area: p-connect ;
+}
+#password-connect {
+    grid-area: pw-connect;
+}
+.button-connect {
+    grid-area: b-connect;
+}
+
+.modal-connect {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 40px);
+    grid-template-areas: 
+    "t-connect t-connect t-connect"
+    "m-connect e-connect e-connect"
+    "p-connect pw-connect pw-connect"
+    ". b-connect .";
+    gap: 30px 10px;
+    padding: 5px;
 }
