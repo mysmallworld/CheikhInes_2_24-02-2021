@@ -5,7 +5,7 @@ p {
     font-size: 10px;
 }
 
-/* en-tête */
+/* header */
 nav {
     grid-template-columns: auto repeat(3, 100px);
     grid-template-rows: 70px;
@@ -30,12 +30,12 @@ nav {
     line-height: 68px;
 }
 
-/* titre */
+/* title */
 h1 {
     display: block;
 }
 
-/* barre de recherche */
+/* search */
 .search {
     width: 35%;
 }
@@ -57,7 +57,7 @@ button {
     padding-right: 20px;
 }
 
-/* structure main */
+/* main */
 main {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto auto auto;
@@ -70,7 +70,7 @@ main {
     gap: 20px;
 }
 
-/* populaire */
+/* best */
 .best {
     grid-template-columns: auto;
     grid-template-rows: 25px repeat(3, 120px);
@@ -126,7 +126,7 @@ main {
     font-size: 10px;
 }
 
-/* hébergement */
+/* home */
 #home {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 190px 200px;
@@ -159,7 +159,7 @@ main {
     height: 80px;
 }
 
-/* activités */
+/* activities */
 #activities {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto repeat(5, 90px);

@@ -18,7 +18,7 @@ nav {
     display: block;
 }
 
-/* barre de recherche*/
+/* search */
 #text-search {
     display: inline-block;
 }
@@ -29,7 +29,7 @@ nav {
     font-size: 14px;
 }
 
-/* populaire */
+/* best */
 .best {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 130px 130px;
@@ -78,7 +78,7 @@ nav {
     padding: 10px;
 }
 
-/* hébergement */
+/* home */
 #home {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto repeat(3, 200px);
@@ -89,7 +89,7 @@ nav {
         "home5 home6";
 }
 
-/* activités */
+/* activities */
 #activities {
     display: grid;
     grid-template-columns: 1fr 1fr;
