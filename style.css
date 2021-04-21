@@ -32,13 +32,14 @@ h4 {
     font-size: 1.2rem;
 }
 
-/* positionnement de l'en-tête avec grid */
+/* header with grid */
 
 .icon {
     grid-area: item;
     height: 100%;
     padding: 10px;
 }
+
 #sign-in {
     grid-area: name;
     color: rgb(41, 103, 243);
@@ -71,7 +72,7 @@ nav {
         "p1 p2";
 }
 
-/* positionement de main avec grid */
+/* main with grid */
 
 .title {
     grid-area: header;
@@ -106,7 +107,7 @@ main {
     gap: 20px;
 }
 
-/* titre et paragraphe */
+/* title and p */
 h1 {
     display: inline-block;
     padding-top: 10px;
@@ -117,9 +118,9 @@ main > header > p {
     display: inline-block;
 }
 
-/* formulaire */
+/* form */
 
-/* barre de recherche */
+/* search */
 .search {
     display: flex;
 }
@@ -156,7 +157,7 @@ button {
     line-height: 10px;
 }
 
-/* mise en place des filtres*/
+/* filters */
 .filter {
     margin-bottom: 10px;
     padding-top: 10px;
@@ -193,7 +194,7 @@ label > input {
     color: rgb(41, 103, 243);
 }
 
-/* buttons filtre */
+/* buttons filters */
 #economic,
 #family,
 #romantic,
@@ -221,7 +222,7 @@ label > input {
     margin-right: 5px;
 }
 
-/* populaire */
+/* best */
 .best {
     display: grid;
     grid-template-columns: auto;
@@ -289,7 +290,7 @@ label > input {
     font-size: 12px;
 }
 
-/* mise en place étoiles et prix en gras */
+/* stars and prices */
 .stars {
     position: absolute;
     bottom: 5px;
@@ -302,7 +303,7 @@ label > input {
     font-weight: bold;
 }
 
-/* hébergement */
+/* home */
 #home {
     display: grid;
     grid-template-columns: auto;
@@ -389,7 +390,7 @@ label > input {
     padding: 10px;
 }
 
-/* activités */
+/* activities */
 #activities {
     display: grid;
     grid-template-columns: auto;
@@ -473,7 +474,7 @@ label > input {
     font-size: 13px;
 }
 
-/* fin */
+/* footer */
 footer {
     display: grid;
     grid-template-columns: auto;
