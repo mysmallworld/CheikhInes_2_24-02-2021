@@ -40,7 +40,7 @@
                 </a>
                 <a href="#home" id="house">Hébergements</a>
                 <a href="#activities" id="move">Activités</a>
-                <a href="#" id="sign-in">S'inscrire</a>
+                <button id="sign-in">S'inscrire</button>
             </nav>
         </header>
 
@@ -55,11 +55,12 @@
                     <label for="search-label">
                         <i class="fas fa-map-marker-alt"></i>
                     </label>
-                    <input type="search" id="search-label"/>
+                    <input type="search" id="search-label" />
 
-                    <button>
+                    <button class="button-search">
                         <span id="icon-search">
-                        <i class="fas fa-search"></i></span>
+                            <i class="fas fa-search"></i
+                        ></span>
                         <span id="text-search">Rechercher</span>
                     </button>
                 </div>
@@ -68,7 +69,7 @@
                     <p>Filtres</p>
                     <label for="filter-price" id="economic">
                         <i class="fas fa-money-bill-wave cercle-icon"></i>
-                        <span id="filters">Économique</span>
+                        <span class="filters">Économique</span>
                         <input
                             type="checkbox"
                             name="Économique"
@@ -78,7 +79,7 @@
 
                     <label for="filter-with-children" id="family">
                         <i class="fas fa-child"></i>
-                        <span id="filters">Familial</span>
+                        <span class="filters">Familial</span>
                         <input
                             type="checkbox"
                             name="Familial"
@@ -88,7 +89,7 @@
 
                     <label for="filter-romantic" id="romantic">
                         <i class="fas fa-heart"></i>
-                        <span id="filters">Romantique</span>
+                        <span class="filters">Romantique</span>
                         <input
                             type="checkbox"
                             name="Romantique"
@@ -98,7 +99,7 @@
 
                     <label for="filter-pets" id="pets">
                         <i class="fas fa-dog"></i>
-                        <span id="filters">Animaux autorisés</span>
+                        <span class="filters">Animaux autorisés</span>
                         <input
                             type="checkbox"
                             name="Animaux autorisés"
@@ -127,14 +128,14 @@
                         />
                         <figcaption id="legend-home1">
                             <h4>Auberge la Cannebière</h4>
-                            <p>Nuit à partir de <span id="prices">25€</span></p>
-                            <div id="stars">
+                            <p>Nuit à partir de <span class="prices">25€</span></p>
+                            <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <span id="empty-stars">
-                                <i class="fas fa-star"></i>
+                                <span class="empty-stars">
+                                    <i class="fas fa-star"></i>
                                 </span>
                             </div>
                         </figcaption>
@@ -151,8 +152,8 @@
 
                         <figcaption id="legend-home2">
                             <h4>Hôtel du port</h4>
-                            <p>Nuit à partir de <span id="prices">52€</span></p>
-                            <div id="stars">
+                            <p>Nuit à partir de <span class="prices">52€</span></p>
+                            <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -173,14 +174,14 @@
 
                         <figcaption id="legend-home3">
                             <h4>Hôtel Les mouettes</h4>
-                            <p>Nuit à partir de <span id="prices">76€</span></p>
-                            <div id="stars">
+                            <p>Nuit à partir de <span class="prices">76€</span></p>
+                            <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <span id="empty-stars">
-                                <i class="fas fa-star"></i>
+                                <span class="empty-stars">
+                                    <i class="fas fa-star"></i>
                                 </span>
                             </div>
                         </figcaption>
@@ -197,16 +198,16 @@
 
                         <figcaption id="legend-home4">
                             <h4>Hôtel de la mer</h4>
-                            <p>Nuit à partir de <span id="prices">46€</span></p>
-                            <div id="stars">
+                            <p>Nuit à partir de <span class="prices">46€</span></p>
+                            <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <span id="empty-stars">
-                                <i class="fas fa-star"></i>
+                                <span class="empty-stars">
+                                    <i class="fas fa-star"></i>
                                 </span>
-                                <span id="empty-stars">
-                                <i class="fas fa-star"></i>
+                                <span class="empty-stars">
+                                    <i class="fas fa-star"></i>
                                 </span>
                             </div>
                         </figcaption>
@@ -223,14 +224,14 @@
 
                         <figcaption id="legend-home5">
                             <h4>Auberge Le Panier</h4>
-                            <p>Nuit à partir de <span id="prices">23€</span></p>
-                            <div id="stars">
+                            <p>Nuit à partir de <span class="prices">23€</span></p>
+                            <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <span id="empty-stars">
-                                <i class="fas fa-star"></i>
+                                <span class="empty-stars">
+                                    <i class="fas fa-star"></i>
                                 </span>
                             </div>
                         </figcaption>
@@ -247,8 +248,8 @@
 
                         <figcaption id="legend-home6">
                             <h4>Hôtel chez Amina</h4>
-                            <p>Nuit à partir de <span id="prices">96€</span></p>
-                            <div id="stars">
+                            <p>Nuit à partir de <span class="prices">96€</span></p>
+                            <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -277,8 +278,10 @@
 
                         <figcaption id="legend-best1">
                             <h4>Hôtel Le soleil du matin</h4>
-                            <p>Nuit à partir de <span id="prices">128€</span></p>
-                            <div class="stars">
+                            <p>
+                                Nuit à partir de <span class="prices">128€</span>
+                            </p>
+                            <div class="stars-best">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -299,14 +302,14 @@
 
                         <figcaption id="legend-best2">
                             <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                            <p>Nuit à partir de <span id="prices">71€</span></p>
-                            <div class="stars">
+                            <p>Nuit à partir de <span class="prices">71€</span></p>
+                            <div class="stars-best">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <span id="empty-stars">
-                                <i class="fas fa-star"></i>
+                                <span class="empty-stars">
+                                    <i class="fas fa-star"></i>
                                 </span>
                             </div>
                         </figcaption>
@@ -323,14 +326,14 @@
 
                         <figcaption id="legend-best3">
                             <h4>Hôtel Tout bleu et Blanc</h4>
-                            <p>Nuit à partir de <span id="prices">68€</span></p>
-                            <div class="stars">
+                            <p>Nuit à partir de <span class="prices">68€</span></p>
+                            <div class="stars-best">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <span id="empty-stars">
-                                <i class="fas fa-star"></i>
+                                <span class="empty-stars">
+                                    <i class="fas fa-star"></i>
                                 </span>
                             </div>
                         </figcaption>
@@ -441,5 +444,67 @@
                 <li><a href="#">Nous contacter</a></li>
             </ul>
         </footer>
+
+        <!-- Modal Register -->
+        <div id="sign-up">
+            <form action="POST" class="modal-auth">
+                <h1 class="title-sign-up">Inscription</h1>
+                <p>N'hésitez pas à nous contacter au 00.00.00.00.00</p>
+
+                    <label for="lastname" id="name1">Nom :</label>
+                    <input
+                        id="lastname"
+                        name="subscriber_last_name"
+                        type="text" required/>
+
+                    <label for="firstname" id="name2">Prénom :</label>
+                    <input
+                        id="firstname"
+                        name="subscriber_first_name"
+                        type="text" required/>
+
+                    <label for="email" id="mail">E-mail :</label>
+                    <input 
+                        id="email" 
+                        name="subscriber_email" 
+                        type="email" required/>
+
+                    <label for="password" id="pass">Mot de passe :</label>
+                    <input 
+                        id="password" 
+                        name="subscriber_password" 
+                        type="password" required/>
+
+                <button type="button" class="button-sign-up">S'inscrire</button>
+                <button id="close-sign">
+                    <i class="fas fa-times"></i>
+                </button>
+                <p class="question">Vous avez déjà un compte ? <a href="#connect">Connectez-vous</a></p>
+            </form>
+        </div>
+        <!-- Modal Connect -->
+        <div id="connect"> 
+            <form action="POST" class="modal-connect">
+                <h1 class="title-connect">Connexion</h1>
+
+                <label for="email" id="mail-connect">E-mail :</label>
+                    <input 
+                        id="email-connect" 
+                        name="connect_email" 
+                        type="email" required/>
+
+                <label for="password" id="pass-connect">Mot de passe :</label>
+                    <input 
+                        id="password-connect" 
+                        name="connect_password" 
+                        type="password" required/>
+
+                <button type="button" class="button-connect">Se connecter</button>
+                <button id="close-connect">
+                    <i class="fas fa-times"></i>
+                </button>
+            </form>
+        </div>
+    <script src="script.js"></script>
     </body>
 </html>
