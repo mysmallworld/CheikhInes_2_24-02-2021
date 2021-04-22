@@ -1,3 +1,4 @@
+/* font */
 @font-face {
     font-family: "Raleway";
     src: url("Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
@@ -6,7 +7,7 @@
 }
 @font-face {
     font-family: "Raleway";
-    src: url("Raleway/static/Raleway-Bold.ttf");
+    src: url("Raleway/static/Raleway-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: bold;
 }
@@ -34,7 +35,7 @@ h4 {
 
 /* header with grid */
 
-.icon {
+#icon {
     grid-area: item;
     height: 100%;
     padding: 10px;
@@ -98,7 +99,7 @@ nav {
 main {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: repeat(5,auto);
     grid-template-areas:
         "header"
         "form"
@@ -144,6 +145,10 @@ main > header > p {
 #text-search {
     display: none;
     padding: 0 10px;
+}
+::placeholder {
+    font-weight: bold;
+    color: black;
 }
 .filters {
     padding: 0 10px;
@@ -389,6 +394,7 @@ label > input {
     color: black;
     font-weight: bold;
     padding: 10px;
+    font-size: 12px;
 }
 
 /* activities with grid */
@@ -604,6 +610,7 @@ form > p {
     border-radius: 10px;
     border: 2px solid rgb(224, 235, 253);
     padding: 0 5px;
+    width: 80%;
 }
 
 .title-sign-up, .title-connect {
