@@ -35,12 +35,12 @@
                     <img
                         src="images/logo/Reservia@3x.png"
                         alt="logo reservia"
-                        class="icon"
+                        id="icon"
                     />
                 </a>
                 <a href="#home" id="house">Hébergements</a>
                 <a href="#activities" id="move">Activités</a>
-                <button id="sign-in">S'inscrire</button>
+                <button type="button" id="sign-in">S'inscrire</button>
             </nav>
         </header>
 
@@ -55,7 +55,7 @@
                     <label for="search-label">
                         <i class="fas fa-map-marker-alt"></i>
                     </label>
-                    <input type="search" id="search-label"/>
+                    <input type="search" id="search-label" placeholder="Marseille, France" />
 
                     <button class="button-search">
                         <span id="icon-search">
@@ -128,7 +128,9 @@
                         />
                         <figcaption id="legend-home1">
                             <h4>Auberge la Cannebière</h4>
-                            <p>Nuit à partir de <span class="prices">25€</span></p>
+                            <p>
+                                Nuit à partir de <span class="prices">25€</span>
+                            </p>
                             <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -152,7 +154,9 @@
 
                         <figcaption id="legend-home2">
                             <h4>Hôtel du port</h4>
-                            <p>Nuit à partir de <span class="prices">52€</span></p>
+                            <p>
+                                Nuit à partir de <span class="prices">52€</span>
+                            </p>
                             <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -174,7 +178,9 @@
 
                         <figcaption id="legend-home3">
                             <h4>Hôtel Les mouettes</h4>
-                            <p>Nuit à partir de <span class="prices">76€</span></p>
+                            <p>
+                                Nuit à partir de <span class="prices">76€</span>
+                            </p>
                             <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -198,7 +204,9 @@
 
                         <figcaption id="legend-home4">
                             <h4>Hôtel de la mer</h4>
-                            <p>Nuit à partir de <span class="prices">46€</span></p>
+                            <p>
+                                Nuit à partir de <span class="prices">46€</span>
+                            </p>
                             <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -224,7 +232,9 @@
 
                         <figcaption id="legend-home5">
                             <h4>Auberge Le Panier</h4>
-                            <p>Nuit à partir de <span class="prices">23€</span></p>
+                            <p>
+                                Nuit à partir de <span class="prices">23€</span>
+                            </p>
                             <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -248,7 +258,9 @@
 
                         <figcaption id="legend-home6">
                             <h4>Hôtel chez Amina</h4>
-                            <p>Nuit à partir de <span class="prices">96€</span></p>
+                            <p>
+                                Nuit à partir de <span class="prices">96€</span>
+                            </p>
                             <div class="stars-home">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -279,7 +291,8 @@
                         <figcaption id="legend-best1">
                             <h4>Hôtel Le soleil du matin</h4>
                             <p>
-                                Nuit à partir de <span class="prices">128€</span>
+                                Nuit à partir de
+                                <span class="prices">128€</span>
                             </p>
                             <div class="stars-best">
                                 <i class="fas fa-star"></i>
@@ -302,7 +315,9 @@
 
                         <figcaption id="legend-best2">
                             <h4>Au coeur de l'eau Chambres d'hôtes</h4>
-                            <p>Nuit à partir de <span class="prices">71€</span></p>
+                            <p>
+                                Nuit à partir de <span class="prices">71€</span>
+                            </p>
                             <div class="stars-best">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -326,7 +341,9 @@
 
                         <figcaption id="legend-best3">
                             <h4>Hôtel Tout bleu et Blanc</h4>
-                            <p>Nuit à partir de <span class="prices">68€</span></p>
+                            <p>
+                                Nuit à partir de <span class="prices">68€</span>
+                            </p>
                             <div class="stars-best">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -451,60 +468,59 @@
                 <h1 class="title-sign-up">Inscription</h1>
                 <p>N'hésitez pas à nous contacter au 00.00.00.00.00</p>
 
-                    <label for="lastname" id="name1">Nom :</label>
-                    <input
-                        id="lastname"
-                        name="subscriber_last_name"
-                        type="text" required/>
+                <label for="lastname" id="name1">Nom :</label>
+                <input id="lastname" name="subscriber_last_name" type="text" />
 
-                    <label for="firstname" id="name2">Prénom :</label>
-                    <input
-                        id="firstname"
-                        name="subscriber_first_name"
-                        type="text" required/>
+                <label for="firstname" id="name2">Prénom :</label>
+                <input
+                    id="firstname"
+                    name="subscriber_first_name"
+                    type="text"
+                />
 
-                    <label for="email" id="mail">E-mail :</label>
-                    <input 
-                        id="email" 
-                        name="subscriber_email" 
-                        type="email" required/>
+                <label for="email" id="mail">E-mail :</label>
+                <input id="email" name="subscriber_email" type="email" />
 
-                    <label for="password" id="pass">Mot de passe :</label>
-                    <input 
-                        id="password" 
-                        name="subscriber_password" 
-                        type="password" required/>
+                <label for="password" id="pass">Mot de passe :</label>
+                <input
+                    id="password"
+                    name="subscriber_password"
+                    type="password"
+                />
 
                 <button type="button" class="button-sign-up">S'inscrire</button>
-                <button id="close-sign">
+                <button type="button" id="close-sign">
                     <i class="fas fa-times"></i>
                 </button>
-                <p class="question">Vous avez déjà un compte ? <a href="#connect">Connectez-vous</a></p>
+                <p class="question">
+                    Vous avez déjà un compte ?
+                    <a href="#connect" id="link-connect">Connectez-vous</a>
+                </p>
             </form>
         </div>
         <!-- Modal Connect -->
-        <div id="connect"> 
+        <div id="connect">
             <form action="POST" class="modal-connect">
                 <h1 class="title-connect">Connexion</h1>
 
                 <label for="email" id="mail-connect">E-mail :</label>
-                    <input 
-                        id="email-connect" 
-                        name="connect_email" 
-                        type="email" required/>
+                <input id="email-connect" name="connect_email" type="email" />
 
                 <label for="password" id="pass-connect">Mot de passe :</label>
-                    <input 
-                        id="password-connect" 
-                        name="connect_password" 
-                        type="password" required/>
+                <input
+                    id="password-connect"
+                    name="connect_password"
+                    type="password"
+                />
 
-                <button type="button" class="button-connect">Se connecter</button>
-                <button id="close-connect">
+                <button type="button" class="button-connect">
+                    Se connecter
+                </button>
+                <button type="button" id="close-connect">
                     <i class="fas fa-times"></i>
                 </button>
             </form>
         </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
