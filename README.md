@@ -10,7 +10,7 @@ Avant cette formation je ne connaissais rien de l'informatique, et pourtant cela
 De plus, j'ai pris l'initiative d'aller plus loin en y intégrant une modale d'inscription et de connection avec du JS (n'hésitez pas à cliquer sur "s'inscrire"). 
 
 Ce projet reflète donc ma motivation mais surtout ma capacité d'apprentissage et d'adaptation. 
-Si vous connaissez des recruteurs ou êtes vous-même recruteur n'hésitez pas à faire un tour sur mon profil Linkedin : https://www.linkedin.com/in/cheikh-ines/
+Si vous connaissez des recruteurs ou êtes vous-même recruteur n'hésitez pas à faire un tour sur mon profil Linkedin : https://www.linkedin.com/in/cheikh-ines/.
 Je vous laisse donc découvrir ce projet qui n'est que le premier d'une longue liste ! 
 
 Cheikh Inès. 
