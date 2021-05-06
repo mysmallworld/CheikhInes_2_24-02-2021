@@ -7,7 +7,7 @@ Il consiste en l'intégration d'une maquette responsive en HTML et CSS.
 Nous avions deux mois pour réaliser ce projet from scratch sous la tutelle d'un "mentor", lui-même développeur. 
 
 Avant cette formation je ne connaissais rien de l'informatique, et pourtant cela ne m'a pas empêché de terminer ce projet bien avant le délai exigé. 
-De plus, j'ai pris l'initiative d'aller plus loin en y intégrant une modale d'inscription et de connection avec du JS (n'hésitez pas à cliquer sur "s'inscrire"). 
+De plus, j'ai pris l'initiative d'aller plus loin en y intégrant une modale d'inscription et de connexion avec du JS (n'hésitez pas à cliquer sur "s'inscrire"). 
 
 Ce projet reflète donc ma motivation mais surtout ma capacité d'apprentissage et d'adaptation. 
 Si vous connaissez des recruteurs ou êtes vous-même recruteur n'hésitez pas à consulter mon profil Linkedin : https://www.linkedin.com/in/cheikh-ines/.
